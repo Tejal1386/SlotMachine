@@ -5,53 +5,131 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/brown"
     tools:context="com.example.tejalpatel.slotmachine.GameActivity">
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="145dp"
+        android:src="@drawable/jackpot"/>
+
+
+    <LinearLayout
+        android:background="@drawable/reelbackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_gravity="center">
         <ImageView
             android:layout_margin="10dp"
             android:id="@+id/img_Reel1"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:src="@drawable/seven"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
 
         <ImageView
             android:layout_margin="10dp"
             android:id="@+id/img_Reel2"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:src="@drawable/seven"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
 
         <ImageView
             android:layout_margin="10dp"
             android:id="@+id/img_Reel3"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:src="@drawable/seven"
+            android:layout_width="90dp"
+            android:layout_height="90dp"/>
     </LinearLayout>
 
     <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Bet"
+
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Credit"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Winnigs"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:layout_width="110dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
         android:layout_gravity="center">
 
         <ImageView
-            android:layout_margin="10dp"
+
+            android:layout_margin="30dp"
             android:id="@+id/img_Reset"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/reset"/>
         <ImageView
-            android:layout_margin="10dp"
+
+            android:layout_margin="30dp"
             android:id="@+id/img_Spin"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/spin"/>
         <ImageView
-            android:layout_margin="10dp"
+
+            android:layout_margin="30dp"
             android:id="@+id/img_Quit"
             android:layout_width="60dp"
             android:layout_height="60dp"
